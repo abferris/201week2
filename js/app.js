@@ -27,7 +27,7 @@ new branch ('Capitol Hill', 20, 38, 2.3);
 new branch (' Seatac Airport', 2, 16, 1.2);
 new branch ('Seattle Center', 11, 38, 2.3);
 
-`branch.prototype.randSalesday = function () {
+branch.prototype.randSalesday = function () {
   for (var i= 0; i<hours.length; i++){
     //generate random salesday
     this.randomSalesday.push(Math.floor((Math.random()*(this.maxCust-this.minCust+ 1)+this.minCust) *this.avgSales));
@@ -37,7 +37,7 @@ new branch ('Seattle Center', 11, 38, 2.3);
   //put this.total on the end of the random sales
   this.randomSalesday.push(this.total); 
 };
-`
+
 
 // branch.prototype.render()= function() {
 //   var

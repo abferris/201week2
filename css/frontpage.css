@@ -3,10 +3,7 @@
   padding:0;
   margin:0;
 }
-
-body{
-  background: #6ae9ff;
-}
+/* header info */
 header{
   background: #ffc012;
   width: 80%;
@@ -49,8 +46,13 @@ header{
   width: 68%; 
   left:20%; 
 }
+/* body information */
+body{
+  background: #6ae9ff;
+}
 h1{
   padding-top: 30%;
+  padding-bottom: 30px;
   text-align: center;
 }
 table{
@@ -59,4 +61,17 @@ table{
 table, th, td {
   background: #ffc012;
   border: 5px solid #fa8be7;
+}
+h3{
+  padding:15px;
+}
+p, ul{
+  padding:5px 40px 5px 40px;
+}
+li{
+  list-style-position: inside;
+}
+img{
+  padding: 10px;
+  align-self: left;
 }

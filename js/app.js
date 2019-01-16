@@ -1,4 +1,5 @@
 var hours = ['6 AM', '7 AM','8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
+
 //creating hours with total on the end
 var hoursPlus=[];
 for (i=0; i<hours.length; i++){
@@ -27,7 +28,6 @@ new branch (' Seatac Airport', 2, 16, 1.2);
 new branch ('Seattle Center', 11, 38, 2.3);
 
 branch.prototype.randSalesday = function () {
-  console.log('prototype');
   for (var i= 0; i<hours.length; i++){
     //generate random salesday
     this.randomSalesday.push(Math.floor((Math.random()*(this.maxCust-this.minCust+ 1)+this.minCust) *this.avgSales));
@@ -35,8 +35,7 @@ branch.prototype.randSalesday = function () {
     this.total= this.total+this.randomSalesday[i];
   }
   //put this.total on the end of the random sales
-  this.randomSalesday.push(this.total);
-  
+  this.randomSalesday.push(this.total); 
 };
 
 
@@ -71,6 +70,7 @@ function makeheaderrow(){
   }
   locTable.appendChild(trEl);
 }
+
 //renderfunction
 branch.prototype.render = function(){
   var trEl= document.createElement("tr");

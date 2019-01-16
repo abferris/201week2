@@ -36,15 +36,13 @@ branch.prototype.randSalesday = function () {
   }
   //put this.total on the end of the random sales
   this.randomSalesday.push(this.total);
-  console.log(this.randomSalesday);
-  console.log(this.total);  
+  
 };
 
 
 // branch.prototype.render()= function() {
 //   var
 // }
-console.log(allLocations);
 //push
 for (var j=0; j<allLocations.length; j++){
 allLocations[j].randSalesday();
@@ -59,7 +57,6 @@ for (var k=0; k<hoursPlus.length; k++){
   };
   totalsArray.push(totals);
 };
-console.table(totalsArray);
 
 //render header
 function makeheaderrow(){
@@ -88,12 +85,12 @@ branch.prototype.render = function(){
   }
   locTable.appendChild(trEl);
 }
-
 function renderAllLocations(){
   for (var i=0; i<allLocations.length; i++){
     allLocations[i].render();
   }
 }
+
 //render footer
 function makefooterrow(){
   var trEl= document.createElement("tr");
@@ -107,6 +104,7 @@ function makefooterrow(){
   }
   locTable.appendChild(trEl);
 }
+
 //call functions
 makeheaderrow();
 renderAllLocations();

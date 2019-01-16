@@ -33,7 +33,7 @@ header{
   text-shadow: 2px 2px #494747;
   line-height: 95px;
 }
- #crackers{
+ #cookies{
   top:55%;
   right: 15%;
 } 
@@ -52,15 +52,20 @@ body{
 }
 h1{
   padding-top: 30%;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align: center;
 }
 table{
-  margin: 20px 20px 20px 10%;
+  margin: 0px 20px 20px 10%;
 }
 table, th, td {
-  background: #ffc012;
+  background: #494747;
   border: 5px solid #fa8be7;
+  color: #ffc012
+}
+th,td{
+  padding: 3px;
+  text-align: center;
 }
 h3{
   padding:15px;

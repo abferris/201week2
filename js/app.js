@@ -6,6 +6,7 @@ for (i=0; i<hours.length; i++){
   hoursPlus[i]= hours[i];
 }
 hoursPlus.push('Total');
+var locForm = document.getElementById('newlocation');
 
 var allLocations = [];
 var totalsArray = [];
@@ -27,6 +28,8 @@ new branch ('Capitol Hill', 20, 38, 2.3);
 new branch (' Seatac Airport', 2, 16, 1.2);
 new branch ('Seattle Center', 11, 38, 2.3);
 
+
+
 branch.prototype.randSalesday = function () {
   for (var i= 0; i<hours.length; i++){
     //generate random salesday
@@ -39,13 +42,13 @@ branch.prototype.randSalesday = function () {
 };
 
 
-// branch.prototype.render()= function() {
-//   var
-// }
+
 //push
 for (var j=0; j<allLocations.length; j++){
 allLocations[j].randSalesday();
 };
+
+
 
 
 //totalsarray
@@ -95,7 +98,7 @@ function renderAllLocations(){
 function makefooterrow(){
   var trEl= document.createElement("tr");
   var tdEl = document.createElement("td");
-  tdEl.textContent = ' ';
+  tdEl.textContent = 'All Locations';
   trEl.appendChild(tdEl);
   for (i=0; i<hoursPlus.length; i++){
     var tdEl = document.createElement('td')
@@ -109,3 +112,48 @@ function makefooterrow(){
 makeheaderrow();
 renderAllLocations();
 makefooterrow();
+
+
+
+
+
+
+//Form for new locations JS
+function logme(event){
+  event.preventDefault();
+  console.log('click');
+  console.log(event.target.name.value)
+ if (event.target.max.value<event.target.min.value ){
+  return alert('invalid input');
+ }
+  var where =event.target.name.value;
+  var minValue = parseInt(event.target.min.value);
+  var maxValue = parseInt(event.target.max.value);
+  var avgValue = parseInt(event.target.avg.value);
+  var newRandomSalesday=[]
+  var newTotal=0;
+  for (var i= 0; i<hours.length; i++){
+    //generate random salesday
+    var g = Math.random()
+    console.log(g);
+    newRandomSalesday.push((g*(maxValue-minValue+ 1)+minValue) *avgValue);
+    //add it to total
+    newTotal+=newRandomSalesday[i];
+  }
+  newRandomSalesday.push(newTotal);
+  console.log(newRandomSalesday);
+  console.log(newTotal)
+   var newLocation= new branch(where,minValue,maxValue,avgValue,newRandomSalesday,newTotal);
+//  (console.log)
+//   locTable.textContent='';
+//   event.target.min.value=null;
+//   event.target.max.value=null;
+//   event.target.avg.value=null;
+//   event.target.name.value=null;
+//   // allLocations.push(newLocation);
+  // console.log(allLocations)
+  //  makeheaderrow();
+  //  renderAllLocations();
+  //  makefooterrow();
+}
+locForm.addEventListener('submit' ,logme);

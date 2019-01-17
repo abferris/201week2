@@ -1,3 +1,5 @@
+/*change things into vws*/
+
 
 *{
   padding:0;
@@ -6,17 +8,16 @@
 /* header info */
 header{
   background: #ffc012;
-  width: 80%;
+  width: 80vw;
   margin-left: 10%;
   position: fixed;
-  height: 40%;
+  height: 22vw;
   margin-top: 15px;
   border-radius: 50%;
   border-width: 10px;
   border-color: #dd3a34;
   border-style: solid;
   box-shadow: 2px 2px 10px 10px #494747;
-
   /* border-image: url('images/borderimg.png') 25% repeat; */
 }
 .logotext{
@@ -79,4 +80,20 @@ li{
 img{
   padding: 10px;
   align-self: left;
+}
+form{
+  padding-bottom: 15px;
+}
+label{
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+input{
+  width: 50 px;
+}
+#rightOne{
+ margin-left: 360px;
+}
+#rightTwo{
+  margin-left: 200px;
 }

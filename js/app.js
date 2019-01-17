@@ -95,7 +95,7 @@ function renderAllLocations(){
 function makefooterrow(){
   var trEl= document.createElement("tr");
   var tdEl = document.createElement("td");
-  tdEl.textContent = ' ';
+  tdEl.textContent = 'Totals';
   trEl.appendChild(tdEl);
   for (i=0; i<hoursPlus.length; i++){
     var tdEl = document.createElement('td')

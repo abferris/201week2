@@ -148,17 +148,9 @@ function logme(event){
   var avgValue = parseInt(event.target.avg.value);
   var newRandomSalesday=[];
   var newTotal=0;
-  // for (var i= 0; i<hours.length; i++){
-  //   //generate random salesday
-  //   var g = Math.random()
-  //   console.log(g);
-  //   newRandomSalesday.push(Math.floor((g*(maxValue-minValue+ 1)+minValue) *avgValue));
-  //   //add it to total
-  //   newTotal+=newRandomSalesday[i];
-  // }
-  // newRandomSalesday.push(newTotal);
-  console.log('newsalesday',newRandomSalesday);
-  console.log('newtotal', newTotal)
+  
+  // console.log('newsalesday',newRandomSalesday);
+  // console.log('newtotal', newTotal)
   // add new br
   new branch(where,minValue,maxValue,avgValue,newRandomSalesday,newTotal);
 

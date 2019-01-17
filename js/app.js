@@ -6,6 +6,7 @@ for (i=0; i<hours.length; i++){
   hoursPlus[i]= hours[i];
 }
 hoursPlus.push('Total');
+var locForm = document.getElementById('newlocation');
 
 var allLocations = [];
 var totalsArray = [];
@@ -27,6 +28,8 @@ new branch ('Capitol Hill', 20, 38, 2.3);
 new branch (' Seatac Airport', 2, 16, 1.2);
 new branch ('Seattle Center', 11, 38, 2.3);
 
+
+
 branch.prototype.randSalesday = function () {
   for (var i= 0; i<hours.length; i++){
     //generate random salesday
@@ -38,25 +41,39 @@ branch.prototype.randSalesday = function () {
   this.randomSalesday.push(this.total); 
 };
 
+//clear function for pageload
+branch.prototype.clearSalesday = function(){
+  this.randomSalesday = [];
+  this.total=0;
+}
 
-// branch.prototype.render()= function() {
-//   var
-// }
+
 //push
-for (var j=0; j<allLocations.length; j++){
-allLocations[j].randSalesday();
-};
+
+function pageLoad(){
+  for (var k=0; k<allLocations.length; k++){
+    allLocations[k].clearSalesday();
+  };
+  for (var j=0; j<allLocations.length; j++){
+    allLocations[j].randSalesday();
+  };
+}
+pageLoad();
+
 
 
 //totalsarray
-for (var k=0; k<hoursPlus.length; k++){
-  var totals=0
-  for (var j=0; j<allLocations.length; j++){
-    totals += allLocations[j].randomSalesday[k];
+ function loadTotals(){
+   totalsArray =[];
+  for (var k=0; k<hoursPlus.length; k++){
+    var totals=0
+    for (var j=0; j<allLocations.length; j++){
+      totals += allLocations[j].randomSalesday[k];
+    };
+    totalsArray.push(totals);
   };
-  totalsArray.push(totals);
-};
-
+ }
+ loadTotals();
 //render header
 function makeheaderrow(){
   var trEl= document.createElement("tr");
@@ -95,7 +112,7 @@ function renderAllLocations(){
 function makefooterrow(){
   var trEl= document.createElement("tr");
   var tdEl = document.createElement("td");
-  tdEl.textContent = 'Totals';
+  tdEl.textContent = 'All Locations';
   trEl.appendChild(tdEl);
   for (i=0; i<hoursPlus.length; i++){
     var tdEl = document.createElement('td')
@@ -109,3 +126,52 @@ function makefooterrow(){
 makeheaderrow();
 renderAllLocations();
 makefooterrow();
+
+
+
+
+
+
+//Form for new locations JS
+//handler function
+function logme(event){
+  //prevent default
+  event.preventDefault();
+  //prevent less max than min. Others are prevented by required and types
+ if (parseInt(event.target.max.value)<parseInt(event.target.min.value)){
+  return alert('invalid input');
+ }
+ //identifying 
+  var where =event.target.name.value;
+  var minValue = parseInt(event.target.min.value);
+  var maxValue = parseInt(event.target.max.value);
+  var avgValue = parseInt(event.target.avg.value);
+  var newRandomSalesday=[];
+  var newTotal=0;
+  // for (var i= 0; i<hours.length; i++){
+  //   //generate random salesday
+  //   var g = Math.random()
+  //   console.log(g);
+  //   newRandomSalesday.push(Math.floor((g*(maxValue-minValue+ 1)+minValue) *avgValue));
+  //   //add it to total
+  //   newTotal+=newRandomSalesday[i];
+  // }
+  // newRandomSalesday.push(newTotal);
+  console.log('newsalesday',newRandomSalesday);
+  console.log('newtotal', newTotal)
+  // add new br
+  new branch(where,minValue,maxValue,avgValue,newRandomSalesday,newTotal);
+
+  pageLoad();
+  loadTotals();
+   locTable.textContent='';
+   event.target.min.value=null;
+   event.target.max.value=null;
+   event.target.avg.value=null;
+   event.target.name.value=null;
+   console.table(allLocations)
+    makeheaderrow();
+    renderAllLocations();
+    makefooterrow();
+}
+locForm.addEventListener('submit' ,logme);

@@ -8,10 +8,10 @@ header{
   z-index: 2;
   position: absolute;
   background: #ffc012;
-  width: 75vw;
-  left:12.5vw;
+  width: 50vw;
+  left:25vw;
   position: fixed;
-  height: 23.44vw;
+  height: 15vw  ;
   top: 1vw;
   border-radius: 50%;
   border-width: 10px;
@@ -22,28 +22,28 @@ header{
 .logotext{
   position: absolute;
   font-family: cursive;
-  top: 4.5vw;
-  left: 10vw; 
-  font-size: 11.72vw;
+  top: 2vw;
+  left: 8vw; 
+  font-size: 7vw;
   color: #dd3a34;
   text-shadow: .15vw .15vw #494747;
   line-height: 5.47vw;
 }
 #cookies{
-  top:14vw;
-  left: 27vw;
+  top:8vw;
+  left: 18vw;
 }
 #logo{
   position: absolute;
   top: 1vw;
-  width: 60.16vw;
-  left: 12vw;
+  width: 40vw;
+  left: 8vw;
 }
 #navbar{
   position: fixed;
   left:0px;
   background: #ffc012;
-  top: 27vw;
+  top: 18vw;
   font-size: 25px;
   width: 100vw;
   border-top: solid 2px;
@@ -55,7 +55,7 @@ header{
   display: inline-block;
   border-left: solid 2px;
   border-right: solid 2px;
-  margin: -0.26vw;
+  float: left;
 }
 #navbar{
   z-index:1;
@@ -64,10 +64,11 @@ header{
   margin:0;
 }
 li{
+  border-left-style: none;
   padding:0;
   margin:0;
-  width: 16.38vw;
-  height:3vw;
+  width: 16.32vw;
+  height:2.8vw;
 }
 /* body stuff */
 body{
@@ -75,11 +76,12 @@ body{
   z-index: 0;
   background: #6ae9ff;
   width: 95vw;
-  padding-top: 30vw;
-  font-size:18px
+  padding-top: 22vw;
+  font-size:18px;
+  overflow: hidden;
 }
 h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
   margin-bottom: 20px
 }

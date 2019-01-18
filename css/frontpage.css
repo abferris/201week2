@@ -1,3 +1,4 @@
+
 section{
   display: inline-block;
   width: 29.7vw;
@@ -8,7 +9,7 @@ section{
 h3, p{
   text-align: center; 
   width: 28vw;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .placeholder{
   position: relative;
@@ -30,8 +31,8 @@ h3, p{
 }
 section img{
   position: relative;
-  box-align: center;
-  width: 28vw;
+  margin-left: 4vw;
+  width: 20vw;
   border: solid 5px #dd3a34;
 
 }

@@ -36,7 +36,7 @@ header{
 body{
   background: #6ae9ff;
   z-index: 0;
-  style: overflow hidden;
+  overflow: hidden;
 }
 ul {
   text-align: center;

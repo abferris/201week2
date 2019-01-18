@@ -1,4 +1,9 @@
 /* header stuff */
+@font-face{
+  font-family: "playfairDisplay";
+  src: url("https://fonts.google.com/specimen/Playfair+Display?selection.family=Playfair+Display"); 
+}
+
 header{
   z-index: 2;
   position: absolute;
@@ -66,6 +71,7 @@ li{
 }
 /* body stuff */
 body{
+  font-family: 'Playfair Display', serif;
   z-index: 0;
   background: #6ae9ff;
   width: 95vw;

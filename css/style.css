@@ -3,7 +3,11 @@
   font-family: "playfairDisplay";
   src: url("https://fonts.google.com/specimen/Playfair+Display?selection.family=Playfair+Display"); 
 }
-
+a{
+  text-decoration:none;
+  color: #dd3a34;
+  text-shadow: .1vw .1vw #494747;
+}
 header{
   z-index: 2;
   position: absolute;
@@ -52,10 +56,15 @@ header{
   vertical-align: center;
 }
 #navbar li{
-  display: inline-block;
+  display: block;
   border-left: solid 2px;
   border-right: solid 2px;
   float: left;
+}
+#navbar li:hover{
+  transition-delay: 322ms;
+  background:#494747;
+  color: #dd3a34
 }
 #navbar{
   z-index:1;

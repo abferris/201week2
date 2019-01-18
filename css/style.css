@@ -1,10 +1,13 @@
+/* header stuff */
 header{
+  z-index: 2;
+  position: absolute;
   background: #ffc012;
   width: 75vw;
   left:12.5vw;
   position: fixed;
   height: 23.44vw;
-  margin-top: .4vw;
+  top: 1vw;
   border-radius: 50%;
   border-width: 10px;
   border-color: #dd3a34;
@@ -31,18 +34,17 @@ header{
   width: 60.16vw;
   left: 12vw;
 }
-body{
-  background: #6ae9ff;
-}
 #navbar{
   position: fixed;
   left:0px;
   background: #ffc012;
   top: 27vw;
-  font-size:2vw;
+  font-size: 25px;
   width: 100vw;
   border-top: solid 2px;
-  border:solid
+  border:solid;
+  text-align: center;
+  vertical-align: center;
 }
 #navbar li{
   display: inline-block;
@@ -51,6 +53,7 @@ body{
   margin: -0.26vw;
 }
 #navbar{
+  z-index:1;
   width:100vw;
   padding:0;
   margin:0;
@@ -60,4 +63,17 @@ li{
   margin:0;
   width: 16.38vw;
   height:3vw;
+}
+/* body stuff */
+body{
+  z-index: 0;
+  background: #6ae9ff;
+  width: 95vw;
+  padding-top: 30vw;
+  font-size:18px
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px
 }

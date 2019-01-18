@@ -1,46 +1,39 @@
-/*change things into vws*/
-
-
-/* header info */
-
-table{
-  margin: 0px 20px 20px 10%;
-}
-table, th, td {
-  background: #494747;
-  border: 5px solid #fa8be7;
-  color: #ffc012
-}
-th,td{
-  padding: 3px;
-  text-align: center;
-}
-h3{
-  padding:15px;
-}
-p, ul{
-  padding:5px 40px 5px 40px;
-}
-li{
-  list-style-position: inside;
-}
-img{
-  padding: 10px;
-  align-self: left;
-}
-form{
+section{
+  display: inline-block;
+  width: 29.7vw;
+  align-content: center;
+  position: relative;
+  vertical-align: top;
+  }
+h3,  p{
+  text-align: center; 
+  width: 28vw;
   padding-bottom: 15px;
 }
-label{
-  padding-left: 50px;
-  padding-bottom: 5px;
+.placeholder{
+  position: relative;
+  box-align: center;
+  width: 29vw;
 }
-input{
-  width: 50 px;
+#sectionOne{
+  position: relative;
+  margin-left: 3vw;
 }
-#rightOne{
- margin-left: 360px;
+#sectionTwo{
+  position:relative;
+  margin-left: 2vw;
 }
-#rightTwo{
-  margin-left: 200px;
+#sectionThree{
+  position: absolute;;
+  right:2vw;
+  
+}
+section img{
+  position: relative;
+  box-align: center;
+  width: 28vw;
+  border: solid 5px #dd3a34;
+}
+h3{
+  font-size: 25px;
 }

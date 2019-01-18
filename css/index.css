@@ -70,4 +70,10 @@ a{
 html, body {
   margin: 0; 
   height: 100%; 
-  overflow: hidden}
+  overflow: hidden;
+}
+content{
+  position: absolute;
+  width:95vw;
+  left:2.5vw; 
+}

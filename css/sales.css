@@ -1,0 +1,49 @@
+/*change things into vws*/
+
+
+/* header info */
+
+table{
+  margin: 0px 20px 20px 10%;
+}
+table, th, td {
+  background: #494747;
+  border: 5px solid #fa8be7;
+  color: #ffc012
+}
+th,td{
+  padding: 3px;
+  text-align: center;
+}
+h3{
+  padding:15px;
+}
+p, ul{
+  padding:5px 40px 5px 40px;
+}
+li{
+  list-style-position: inside;
+}
+img{
+  padding: 10px;
+  align-self: left;
+}
+form{
+  padding-bottom: 15px;
+}
+label{
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+input{
+  width: 50 px;
+}
+#rightOne{
+ margin-left: 360px;
+}
+#rightTwo{
+  margin-left: 200px;
+}
+legend{
+  margin-left: 40px;
+}

@@ -37,3 +37,15 @@ section img{
 h3{
   font-size: 25px;
 }
+div p {
+  position: relative;
+  text-align: center;
+  width: 80vw;
+  margin-left: 10vw;
+  font-size: 20px;
+  border: dashed 3px #dd3a34;
+  padding-bottom:0;
+}
+div{
+  margin-bottom: 15px;
+}

@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
   <head>
@@ -6,20 +6,24 @@
     <title> Salmon Cookie Shop: Home</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+
      <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display?selection.family=Playfair+Display"> -->
   </head>
 
   <body>
    <header>
-    <img id="logo" src="images/salmon.png" alt="Salmon Crackers Logo">
-    <h1 class="logotext" id="salmon">Salmon </h1>         
-    <h1 class="logotext" id="cookies">Cookies   </h1>
+      <a href="index.html">
+          <img id="logo" src="images/salmon.png" alt="Salmon Cookies Logo">
+          <h1 class="logotext" id="salmon">Salmon </h1>         
+          <h1 class="logotext" id="cookies">Cookies   </h1>
+      </a>
       <ul id=navbar>
         <li>
           <a href="frontpage.html" alt="About Us">About Us</a>       
         </li>
         <li>   
-          <a href="#" alt= "dummylink">About Salmon</a>
+          <a href="aboutSalmon.html" alt= "aboutSalmon">About Salmon</a>
         </li>
         <li> 
           <a href="merch.html">Our Merch Store</a>
@@ -28,12 +32,34 @@
          <a href="#">Locations</a>
         </li>
         <li> 
-         <a href="index.html">Contact Us</a>
-        </li>
+            <a href="#">Contact Us</a>
+          </li>
         <li> 
          <a href="sales.html">Sales Information</a>
         </li> 
       </ul>
     </header>
+    
+    <content>
+      <div>
+      <h2> Merchandise Store</h2>
+      <p> Contact our marketing department or stop in at any of our stores to order or merchandise! We offer a variety of salmon-themed products that will show everyone just how amazing Salmon Cookies are!</p>
+      </div>
+
+      <section id="sectionOne">
+        <h3>Salmon Cookies</h3>
+        <img src="images/frosted-cookie.jpg" alt="sub-banner1" title="sub-banner1">
+      </section>
+
+      <section id="sectionTwo">
+        <h3>Shirt</h3>
+        <img src="images/shirt.jpg" alt="sub-banner1" title="sub-banner1" class="placeholder">
+      </section>
+
+      <section id="sectionThree">
+        <h3>Cutter</h3>
+        <img src="images/cutter.jpeg" alt="sub-banner1" title="sub-banner1">
+      </section>
+    </content>
   </body>
 </html>

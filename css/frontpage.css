@@ -1,61 +1,8 @@
 /*change things into vws*/
 
 
-*{
-  padding:0;
-  margin:0;
-}
 /* header info */
-header{
-  background: #ffc012;
-  width: 80vw;
-  margin-left: 10%;
-  position: fixed;
-  height: 22vw;
-  margin-top: 15px;
-  border-radius: 50%;
-  border-width: 10px;
-  border-color: #dd3a34;
-  border-style: solid;
-  box-shadow: 2px 2px 10px 10px #494747;
-  /* border-image: url('images/borderimg.png') 25% repeat; */
-}
-.logotext{
-  position: absolute;
-  margin: 0;
-	padding: 0;
-	border: 0;
-  font-family: cursive;
-  top: 15%;
-  left: 15%; 
-  vertical-align: baseline;
-  font-size: 120px;
-  color: #dd3a34;
-  text-shadow: 2px 2px #494747;
-  line-height: 95px;
-}
- #cookies{
-  top:55%;
-  right: 15%;
-} 
-#logo{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  position: absolute;
-  top: 9%;
-  width: 68%; 
-  left:20%; 
-}
-/* body information */
-body{
-  background: #6ae9ff;
-}
-h1{
-  padding-top: 30%;
-  padding-bottom: 20px;
-  text-align: center;
-}
+
 table{
   margin: 0px 20px 20px 10%;
 }

@@ -2,42 +2,43 @@
 <html>
 
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title> Salmon Cookie Shop: Sales by Hour</title>
-    <link rel='stylesheet' href='css/frontpage.css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
   </head>
   
   <body>
     <header>
-        <img id='logo' src='images/salmon.png' alt= 'Salmon Crackers Logo'>
-        <h1 class='logotext' id= 'salmon'>Salmon </h1>         
-        <h1 class= 'logotext' id='cookies'>Cookies   </h1>
+        <img id="logo" src="images/salmon.png" alt="Salmon Crackers Logo">
+        <h1 class="logotext" id="salmon">Salmon </h1>         
+        <h1 class="logotext" id="cookies">Cookies   </h1>
     </header>
 
     <h1> Projected Sales Totals for a Day in January</h1>
-    <table id='sales'></table>
-    <form id= 'newlocation'>
+    <table id="sales"></table>
+    <form id="newlocation">
        <fieldset>
           <legend> Add New Location</legend>
 
           <div>
-          <label for='name'> Name: </label>
-          <input name='name' type='text' size=' 20' required >
+          <label for="name"> Name: </label>
+          <input name="name" type="text" size=" 20" required >
 
-          <label id='rightOne' for='min'> Minimum Customers per Hour: </label>
-          <input name='min' type='number'  min= '0' required>
+          <label id="rightOne" for="min"> Minimum Customers per Hour: </label>
+          <input name="min" type="number"  min="0" required>
           </div>
           
           <div>
-          <label for='max'> Maximum Customers per Hour: </label>
-          <input name='max' type='number'  min='0' required>
+          <label for="max"> Maximum Customers per Hour: </label>
+          <input name="max" type="number"  min="0" required>
 
-          <label id= 'rightTwo' for='avg'> Average Purchase per Customer:</label>
-          <input name='avg' type='number'  min = '0' required> </span>
+          <label id="rightTwo" for="avg"> Average Purchase per Customer:</label>
+          <input name="avg" type="number"  min ="0" required> </span>
           </div>
-          <button id='locSubmit' type='submit'>Create Location</button>
+          <button id="locSubmit" type="submit">Create Location</button>
 
         </fieldset>
       </form>
@@ -45,4 +46,3 @@
   </body>
 
 </html>
-      

@@ -41,7 +41,8 @@ header{
   position: absolute;
   top: 1vw;
   width: 40vw;
-  left: 8vw;
+  left: 9vw;
+  padding:0;
 }
 #navbar{
   position: fixed;
@@ -85,12 +86,12 @@ body{
   z-index: 0;
   background: #6ae9ff;
   width: 95vw;
-  padding-top: 22vw;
+  padding-top: 21.5vw;
   font-size:18px;
   overflow: hidden;
 }
 h2{
   text-align: center;
   font-size: 27px;
-  margin-bottom: 20px
+  margin-bottom: 15px
 }

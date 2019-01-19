@@ -8,7 +8,7 @@ table{
 }
 table, th, td {
   background: #494747;
-  border: 5px solid #fa8be7;
+  border: 5px solid #dd3a34;
   color: #ffc012
 }
 th,td{
@@ -29,7 +29,8 @@ img{
   align-self: left;
 }
 form{
-  padding-bottom: 15px;
+  position:absolute;
+  bottom: 1vw;
 }
 label{
   padding-left: 50px;
